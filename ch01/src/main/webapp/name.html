@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function chk() {
+		if(!frm.name.value){
+			alert("이름이 뭐뇽")
+			frm.name.focus();
+			return false;
+		}
+		
+		   return true;
+	}
+
+
+</script>
+</head>
+<body>
+	<h2>이름을 입력하세용^^</h2>
+	<!-- <form action="Greet" name="frm" onsubmit="return chk()"> -->
+	<form action="greet.jsp" name="frm" onsubmit="return chk()">
+	이름 : <input type="text" name="name"><p>
+	<input type="submit" value="확인">
+	</form>
+
+</body>
+</html>
